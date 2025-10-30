@@ -23,7 +23,8 @@ class QCW_Duplicator {
         }
 
         $new_post = [
-            'post_title'   => sprintf( __( 'Copy of %s', 'quickclone-wp' ), $post->post_title ),
+            // translators: %s is replaced with the title of the original post.
+            'post_title' => sprintf( __( 'Copy of %s', 'quickclone-wp' ), $post->post_title ),
             'post_content' => $post->post_content,
             'post_excerpt' => $post->post_excerpt,
             'post_status'  => 'draft',

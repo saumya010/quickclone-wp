@@ -48,7 +48,8 @@ class QCW_Admin {
 
         $post_id = absint( $_GET['post'] );
 
-        if ( ! wp_verify_nonce( $_GET['qcw_nonce'], 'qcw-duplicate_' . $post_id ) ) {
+        $nonce = isset( $_GET['qcw_nonce'] ) ? sanitize_text_field( wp_unslash( $_GET['qcw_nonce'] ) ) : '';
+        if ( ! wp_verify_nonce( $nonce, 'qcw-duplicate_' . $post_id ) ) {
             wp_die( esc_html__( 'Security check failed.', 'quickclone-wp' ) );
         }
 

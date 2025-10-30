@@ -3,7 +3,7 @@
  * Plugin Name: QuickClone WP
  * Plugin URI:  https://github.com/saumya010/quickclone-wp
  * Description: Duplicate any post, page, or custom post type with a single click.
- * Version:     1.0.0
+ * Version:     1.0.1
  * Author:      Saumya Sharma
  * Author URI:  https://iamsaumya.com
  * License:     GPLv2 or later
@@ -15,13 +15,6 @@
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
-
-/**
- * Load plugin text domain.
- */
-add_action( 'plugins_loaded', function() {
-    load_plugin_textdomain( 'quickclone-wp', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-});
 
 /**
  * Include dependencies.
