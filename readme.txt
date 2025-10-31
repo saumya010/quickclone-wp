@@ -5,7 +5,7 @@ Tags: duplicate, copy post, clone, page, cpt
 Requires at least: 6.0
 Tested up to: 6.8
 Requires PHP: 7.4
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,8 +34,10 @@ Yes. All post meta are copied, except for internal WordPress meta (like `_edit_l
 Yes. Any public post type can be duplicated.
 
 == Changelog ==
-= 1.0.0 =
+= 1.0.1 =
 * Initial release
+= 1.0.2 =
+* Added settings page
 
 == License ==
 This plugin is open source and released under the GPLv2 or later license.
